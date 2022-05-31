@@ -9,7 +9,7 @@ function Scene({ children }) {
         background:
           "radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(124,124,124,1) 83%)",
       }}
-      camera={{ position: [0, 0, 2] }}
+      camera={{ position: [0, 0, 3] }}
     >
       <ambientLight intensity={0.3} />
       <spotLight

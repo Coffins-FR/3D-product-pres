@@ -5,8 +5,8 @@ export const TitleStyle = styled("h1", {
   padding: 0,
   "font-size": "48px",
   position: "absolute",
-  top: "20px",
-  left: "20px",
+  bottom: "20px",
+  right: "20px",
   zIndex: "10",
   "text-transform": "capitalize",
 });

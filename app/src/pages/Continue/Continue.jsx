@@ -1,18 +1,19 @@
 import React from "react";
-import Scene from "../../components/Scene";
-import Shoe from "../../components/Models/Shoe";
-import SceneWrapper from "../../components/Wrappers/SceneWrapper";
-import Title from "./Title";
-import { selectedMesh } from "./../../states/selectedMesh";
+import Scene from "@components/Scene";
+import Shoe from "@components/Models/Shoe";
+import Picker from "@components/Picker";
+import SceneWrapper from "@components/Wrappers/SceneWrapper";
+import { getSelectedMesh } from "@states/selectedMesh";
 import { useAtom } from "jotai";
+
 function Continue() {
-  const [obj] = useAtom(selectedMesh);
+  const [mesh] = useAtom(getSelectedMesh);
   return (
     <SceneWrapper>
       <Scene>
         <Shoe />
       </Scene>
-      <Title>{obj.name}</Title>
+      {mesh.name && <Picker />}
     </SceneWrapper>
   );
 }
