@@ -10,6 +10,9 @@ export default defineConfig({
       "@components": `${path.resolve(
         path.join(__dirname, "src", "components")
       )}`,
+      "@containers": `${path.resolve(
+        path.join(__dirname, "src", "containers")
+      )}`,
       "@states": `${path.resolve(path.join(__dirname, "src", "states"))}`,
     },
   },

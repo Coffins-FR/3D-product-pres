@@ -1,8 +1,7 @@
 import React, { Suspense } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Nav from "@components/Nav";
-const Start = React.lazy(() => import("../pages/Start"));
-const Continue = React.lazy(() => import("../pages/Continue"));
+const Home = React.lazy(() => import("../pages/Home"));
 
 function AppRoutes() {
   return (
@@ -10,8 +9,7 @@ function AppRoutes() {
       <Nav />
       <Suspense fallback={null}>
         <Routes>
-          <Route index element={<Start />} />
-          <Route path="/continue" element={<Continue />} />
+          <Route index element={<Home />} />
         </Routes>
       </Suspense>
     </BrowserRouter>

@@ -4,7 +4,7 @@ export const PickerWrapper = styled("div", {
   position: "absolute",
   zIndex: 10,
   bottom: "40px",
-  right: "40px",
+  left: "40px",
   display: "flex",
   flexFlow: "row",
   justifyItems: "center",

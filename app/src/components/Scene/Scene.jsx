@@ -7,9 +7,9 @@ function Scene({ children }) {
     <Canvas
       style={{
         background:
-          "radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(124,124,124,1) 83%)",
+          "radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(200,200,200,1) 83%)",
       }}
-      camera={{ position: [0, 0, 3] }}
+      camera={{ position: [1, 0.5, 1.5] }}
     >
       <ambientLight intensity={0.3} />
       <spotLight

@@ -1,52 +1,55 @@
 import { styled } from "@stitches/react";
 import { Link } from "react-router-dom";
+import { blackA } from "@radix-ui/colors";
 
 export const NavWrapper = styled("nav", {
-  height: "6rem",
-  background: "White",
-  position: "absolute",
-  width: "100%",
-  top: 0,
-  left: 0,
-  zIndex: 10,
-  padding: 0,
+  borderBottom: `1px solid ${blackA.blackA6}`,
+  background: "white",
+  color: "#1A1A1A",
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "space-between",
+  height: "102px",
   margin: 0,
+  paddingLeft: "24px",
+  paddingRight: "24px",
+});
+export const NavElementWrapper = styled("div", {
+  display: "flex",
+  flexFlow: "row",
+  alignItems: "center",
+  justifyContent: "center",
+  gap: "48px",
 });
 
 export const NavElement = styled("ul", {
-  width: "100%",
-  height: "100%",
   listStyle: "none",
   display: "flex",
   flexFlow: "row",
-  justifyContent: "space-around",
+  alignItems: "center",
+  justifyContent: "center",
+  gap: "16px",
   margin: 0,
   padding: 0,
-  alignItems: "center",
 });
 
 export const LinkWrapper = styled("li", {
-  color: "Black",
   textDecoration: "none",
-  width: "100%",
-  height: "100%",
 });
+
 export const Links = styled(Link, {
-  textAlign: "center",
   textDecoration: "none",
-  color: "Black",
-  width: "100%",
-  height: "100%",
-  display: "flex",
-  alignItems: "center",
-  justifyContent: "center",
+  color: "#1A1A1A",
+  fontSize: "18px",
+  fontFamily: "Poppins, sans-serif",
+  "&:hover": {
+    textDecoration: "underline",
+  },
+});
+
+export const LogoWrapper = styled("div", {
+  color: "#1A1A1A",
   fontSize: "36px",
   fontFamily: "Poppins, sans-serif",
   textTransform: "uppercase",
-  fontWeight: "bold",
-  "&:hover": {
-    background: "Orange",
-    color: "White",
-    transition: "background ease-in-out 500ms, color ease-in-out 500ms",
-  },
 });
